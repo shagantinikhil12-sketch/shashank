@@ -15,16 +15,16 @@ const Hero = () => {
       </div>
 
       <div className={styles.content}>
-        <div className={`${styles.titleContainer} ${loaded ? styles.visible : ''}`}>
-          <h1 className={styles.title}>
+        <div className={styles.titleContainer}>
+          <h1 className={`${styles.title} ${loaded ? styles.visible : ''}`}>
             <span className={styles.titleInner}>shashank</span>
           </h1>
-          <h2 className={styles.subtitle}>Cinematic Photo & Video Editor</h2>
+          <h2 className={`${styles.subtitle} ${loaded ? styles.visible : ''}`}>Cinematic Photo & Video Editor</h2>
         </div>
 
-        <div className={`${styles.tagline} ${loaded ? styles.visible : ''}`}>
-          <p className={styles.premiumText}>Crafting premium visuals for creators, brands and businesses.</p>
-          <div className={styles.ctaGroup}>
+        <div className={styles.tagline}>
+          <p className={`${styles.premiumText} ${loaded ? styles.visible : ''}`}>Crafting premium visuals for creators, brands and businesses.</p>
+          <div className={`${styles.ctaGroup} ${loaded ? styles.visible : ''}`}>
             <a href="#works" className={`hover-target ${styles.button}`}>View Work</a>
             <a href="#contact" className={`hover-target ${styles.button}`}>Book Project</a>
           </div>

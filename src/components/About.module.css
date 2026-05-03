@@ -1,6 +1,6 @@
 .about {
   background-color: var(--bg-dark);
-  padding: var(--space-xl) 0;
+  padding: 150px 0;
   position: relative;
   z-index: 10;
 }
@@ -21,26 +21,28 @@
 
 .content {
   display: flex;
-  gap: var(--space-xl);
+  gap: 100px;
   justify-content: space-between;
 }
 
 .mainText {
   flex: 0 0 60%;
-  font-size: 32px;
+  font-size: 44px;
   font-weight: 300;
   color: var(--text-white);
-  line-height: 1.4;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
 }
 
 .secondaryText {
   flex: 0 0 35%;
-  font-size: 14px;
+  font-size: 16px;
   color: var(--text-muted);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: var(--space-md);
+  gap: var(--space-lg);
+  line-height: 1.6;
 }
 
 .link {

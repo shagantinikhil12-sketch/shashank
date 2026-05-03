@@ -19,7 +19,9 @@ const Navbar = () => {
 
   return (
     <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
-      <div className={styles.logo}></div>
+      <div className={styles.logo}>
+        <a href="#home">SHASHANK</a>
+      </div>
       <div className={styles.links}>
         <a href="#home">Home</a>
         <a href="#works">Works</a>

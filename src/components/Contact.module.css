@@ -38,7 +38,7 @@
   font-size: 6vw;
   font-weight: 300;
   letter-spacing: -0.02em;
-  margin: 0 0 16px 0;
+  margin: 0 0 24px 0;
   line-height: 1;
 }
 
@@ -47,7 +47,8 @@
   font-size: 16px;
   color: var(--text-muted);
   font-weight: 300;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
+  letter-spacing: 0.05em;
 }
 
 .formContainer {
@@ -71,10 +72,10 @@
   width: 100%;
   background: transparent;
   border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 12px 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+  padding: 16px 0;
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 15px;
   color: var(--text-dark);
   outline: none;
   transition: border-color 0.4s ease;
@@ -94,21 +95,21 @@
 }
 
 .submitButton {
-  align-self: flex-start;
+  align-self: center; /* Center composition */
   background: none;
   border: none;
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 13px;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
   font-weight: 500;
   color: var(--text-dark);
   cursor: pointer;
-  padding: 12px 24px;
+  padding: 16px 40px;
   border: 1px solid var(--text-dark);
-  border-radius: 4px;
-  transition: all 0.3s ease;
-  margin-top: 10px;
+  border-radius: 0; /* Boxy elegant look */
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  margin-top: 20px;
 }
 
 .submitButton:hover:not(:disabled) {
@@ -148,8 +149,8 @@
   color: var(--text-dark);
   text-decoration: none;
   position: relative;
-  font-weight: 400;
-  opacity: 0.8;
+  font-weight: 500; /* More visible */
+  opacity: 1; /* More visible */
   transition: opacity 0.3s ease;
 }
 

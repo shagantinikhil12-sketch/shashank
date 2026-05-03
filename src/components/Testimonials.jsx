@@ -28,10 +28,14 @@ const Testimonials = () => {
         <h2 className={styles.heading}>client words</h2>
         
         <div className={styles.grid}>
-          {testimonialsData.map((testimonial) => (
-            <div key={testimonial.id} className={styles.item}>
-              <p className={styles.quote}>“{testimonial.quote}”</p>
-              <p className={styles.author}>— {testimonial.author}</p>
+          {testimonialsData.map((testimonial, index) => (
+            <div key={testimonial.id} className={styles.item} style={{ transitionDelay: `${index * 0.2}s` }}>
+              <div className={styles.quoteMark}>"</div>
+              <p className={styles.quote}>{testimonial.quote}</p>
+              <div className={styles.authorBlock}>
+                <p className={styles.author}>{testimonial.author.split(' - ')[0] || testimonial.author}</p>
+                <p className={styles.designation}>{testimonial.author.split(' - ')[1] || 'Verified Client'}</p>
+              </div>
             </div>
           ))}
         </div>

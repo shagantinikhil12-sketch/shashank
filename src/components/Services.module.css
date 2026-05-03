@@ -1,6 +1,6 @@
 .services {
   background-color: var(--bg-light);
-  padding: 100px 0;
+  padding: 150px 0;
   color: var(--text-dark);
 }
 
@@ -20,20 +20,35 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 0;
+  padding: 60px 0;
+}
+
+.titleWrapper {
+  flex: 0 0 45%;
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.number {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--text-muted);
+  font-weight: 300;
+  opacity: 0.5;
 }
 
 .title {
-  flex: 0 0 40%;
   font-family: var(--font-body);
   font-size: 56px;
   font-weight: 300;
   margin: 0;
-  transition: transform 0.5s ease;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  letter-spacing: -0.01em;
 }
 
 .row:hover .title {
-  transform: translateX(10px);
+  transform: translateX(15px);
 }
 
 .row {
@@ -47,17 +62,23 @@
 }
 
 .description {
-  flex: 0 0 55%;
-  font-size: 14px;
-  color: #666666;
-  font-weight: 400;
+  flex: 0 0 50%;
+  font-size: 18px;
+  color: #444444;
+  font-weight: 300;
   margin: 0;
+  line-height: 1.6;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), color 0.3s ease;
+}
+
+.row:hover .description {
+  color: #000000;
 }
 
 .divider {
   border: none;
   height: 1px;
-  background-color: #cccccc;
+  background-color: rgba(0, 0, 0, 0.08); /* Thinner, cleaner look */
   margin: 0;
 }
 

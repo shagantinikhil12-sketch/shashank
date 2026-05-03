@@ -34,7 +34,10 @@ const Services = () => {
           {servicesList.map((service, index) => (
             <div key={index} className={styles.row}>
               <div className={styles.rowContent}>
-                <h3 className={styles.title}>{service.title}</h3>
+                <div className={styles.titleWrapper}>
+                  <span className={styles.number}>0{index + 1}</span>
+                  <h3 className={styles.title}>{service.title}</h3>
+                </div>
                 <p className={styles.description}>{service.description}</p>
               </div>
               <hr className={styles.divider} />

@@ -1,6 +1,6 @@
 .footer {
   background-color: var(--bg-dark);
-  padding: var(--space-xl) 0 var(--space-md) 0;
+  padding: 100px 0 40px 0; /* Reduced dead space */
   color: var(--text-white);
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   position: relative;
@@ -22,7 +22,7 @@
   font-family: var(--font-display);
   font-size: 15vw;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.03);
+  color: rgba(255, 255, 255, 0.015); /* Significantly reduced opacity */
   white-space: nowrap;
   letter-spacing: -0.02em;
 }

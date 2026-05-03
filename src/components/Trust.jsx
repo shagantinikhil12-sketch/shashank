@@ -16,16 +16,16 @@ const Trust = () => {
         
         <div className={styles.columns}>
           <div className={styles.col}>
-            <h3 className={styles.colTitle}>Fast Delivery</h3>
+            <h3 className={styles.colTitle}>01 Fast Delivery</h3>
           </div>
           <div className={styles.col}>
-            <h3 className={styles.colTitle}>Professional Cinematic Finish</h3>
+            <h3 className={styles.colTitle}>02 Professional Cinematic Finish</h3>
           </div>
           <div className={styles.col}>
-            <h3 className={styles.colTitle}>Revision Friendly Workflow</h3>
+            <h3 className={styles.colTitle}>03 Revision Friendly Workflow</h3>
           </div>
           <div className={styles.col}>
-            <h3 className={styles.colTitle}>Social Media Ready Output</h3>
+            <h3 className={styles.colTitle}>04 Social Media Ready Output</h3>
           </div>
         </div>
       </div>
