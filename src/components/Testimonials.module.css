@@ -91,13 +91,17 @@
 
 @media (max-width: 768px) {
   .testimonials {
-    padding: var(--space-lg) 0;
+    padding: 80px 0;
   }
   .grid {
     flex-direction: column;
-    gap: var(--space-xl);
+    gap: 60px;
+  }
+  .quoteMark {
+    font-size: 60px;
   }
   .quote {
-    font-size: 20px;
+    font-size: 24px;
+    margin-bottom: 30px;
   }
 }

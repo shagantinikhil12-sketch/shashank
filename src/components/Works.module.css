@@ -153,11 +153,15 @@
 @media (max-width: 768px) {
   .grid {
     flex-direction: column;
+    gap: 20px;
+  }
+  .col {
+    gap: 20px;
   }
   .marqueeContainer {
     display: none; /* Hide marquee on mobile as per spec */
   }
   .container {
-    margin-top: var(--space-lg);
+    margin-top: 60px;
   }
 }

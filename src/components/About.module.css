@@ -60,17 +60,18 @@
 
 @media (max-width: 768px) {
   .about {
-    padding: var(--space-lg) 0;
+    padding: 80px 0;
   }
   .content {
     flex-direction: column;
-    gap: var(--space-md);
+    gap: 40px;
   }
   .mainText {
     flex: 1;
-    font-size: 24px;
+    font-size: 28px;
   }
   .secondaryText {
     flex: 1;
+    font-size: 15px;
   }
 }

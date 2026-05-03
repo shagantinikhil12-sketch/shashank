@@ -194,11 +194,14 @@
 
 @media (max-width: 768px) {
   .titleInner {
-    font-size: 20vw;
+    font-size: 16vw;
+    width: 100%;
+    transform: translateX(0);
   }
 
   .subtitle {
     font-size: 12px;
+    margin-top: 20px;
   }
 
   .tagline {
@@ -207,15 +210,18 @@
 
   .premiumText {
     font-size: 14px;
+    padding: 0 10px;
   }
 
   .ctaGroup {
     flex-direction: column;
-    gap: var(--space-sm);
+    gap: var(--space-md);
+    width: 100%;
+    align-items: center;
   }
 
   .button {
-    width: 200px;
+    width: 250px;
   }
 
   .trustStrip {
