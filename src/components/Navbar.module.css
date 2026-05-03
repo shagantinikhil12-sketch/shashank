@@ -15,6 +15,14 @@
   letter-spacing: 0.1em;
   font-family: var(--font-body);
   animation: fadeInDown 1.2s ease-out;
+  transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+.scrolled {
+  background-color: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 20px var(--space-md);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .logo {

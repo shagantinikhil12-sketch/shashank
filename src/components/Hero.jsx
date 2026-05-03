@@ -13,15 +13,31 @@ const Hero = () => {
       <div className={styles.background}>
         <div className={styles.overlay}></div>
       </div>
-      
+
       <div className={styles.content}>
-        <h1 className={`${styles.title} ${loaded ? styles.visible : ''}`}>
-          <span className={styles.titleInner}>PHOTO AGENCY</span>
-        </h1>
-        
+        <div className={`${styles.titleContainer} ${loaded ? styles.visible : ''}`}>
+          <h1 className={styles.title}>
+            <span className={styles.titleInner}>shashank</span>
+          </h1>
+          <h2 className={styles.subtitle}>Cinematic Photo & Video Editor</h2>
+        </div>
+
         <div className={`${styles.tagline} ${loaded ? styles.visible : ''}`}>
-          <p>Visual storytelling fueled</p>
-          <p>by passion and craft.</p>
+          <p className={styles.premiumText}>Crafting premium visuals for creators, brands and businesses.</p>
+          <div className={styles.ctaGroup}>
+            <a href="#works" className={`hover-target ${styles.button}`}>View Work</a>
+            <a href="#contact" className={`hover-target ${styles.button}`}>Book Project</a>
+          </div>
+        </div>
+
+        <div className={`${styles.trustStrip} ${loaded ? styles.visible : ''}`}>
+          <span>50+ Projects Delivered</span>
+          <span className={styles.dot}>•</span>
+          <span>Fast Turnaround</span>
+          <span className={styles.dot}>•</span>
+          <span>Reels Specialist</span>
+          <span className={styles.dot}>•</span>
+          <span>Premium Retouching</span>
         </div>
       </div>
     </section>

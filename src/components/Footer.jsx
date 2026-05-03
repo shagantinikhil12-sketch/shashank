@@ -6,33 +6,37 @@ const Footer = () => {
 
   return (
     <footer className={styles.footer}>
-      <div className={`container ${className}`} ref={ref}>
-        <div className={styles.topRow}>
+      <div className={styles.marqueeContainer}>
+        <div className={styles.marqueeText}>
+          <span>©2025 SHASHANK</span>
+        </div>
+      </div>
+      
+      <div className={`container ${styles.container} ${className}`} ref={ref}>
+        <div className={styles.grid}>
           <div className={styles.col}>
-            <a href="mailto:hello@mysite.com" className={`hover-target ${styles.link}`}>hello@mysite.com</a>
-            <a href="tel:88002345234" className={`hover-target ${styles.link}`}>8 800 2345 234</a>
+            <h4 className={styles.label}>Contact</h4>
+            <a href="mailto:hello@example.com" className="hover-target">hello@example.com</a>
+            <a href="tel:+1234567890" className="hover-target">+1 (234) 567-890</a>
           </div>
           
           <div className={styles.col}>
-            <span className={styles.label}>HOW TO FIND US</span>
-            <p className={styles.text}>27 Division St, New York, NY</p>
-            <p className={styles.text}>10002, United States</p>
+            <h4 className={styles.label}>Socials</h4>
+            <a href="#" className="hover-target">Instagram</a>
+            <a href="#" className="hover-target">Behance</a>
+            <a href="#" className="hover-target">Drive Portfolio</a>
           </div>
           
           <div className={styles.col}>
-            <span className={styles.label}>SOCIAL</span>
-            <div className={styles.socialIcons}>
-              <a href="#" className="hover-target">Fb</a>
-              <a href="#" className="hover-target">X</a>
-              <a href="#" className="hover-target">Ig</a>
-              <a href="#" className="hover-target">In</a>
-              <a href="#" className="hover-target">Yt</a>
-            </div>
+            <h4 className={styles.label}>Location</h4>
+            <p>New York, NY</p>
+            <p>Available Worldwide</p>
           </div>
         </div>
         
-        <div className={styles.bottomRow}>
-          <div className={styles.watermark}>©2025 — AGNO</div>
+        <div className={styles.bottomBar}>
+          <p>© 2025 Shashank. All rights reserved.</p>
+          <p>Cinematic Editor</p>
         </div>
       </div>
     </footer>

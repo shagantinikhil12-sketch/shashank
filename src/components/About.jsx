@@ -10,10 +10,10 @@ const About = () => {
         <div className={styles.label}>WHO WE ARE</div>
         <div className={styles.content}>
           <div className={styles.mainText}>
-            <p>We're a creative digital agency fueled by passion and innovation. Our mission is to revolutionize creative work for companies with style and substance.</p>
+            <p>I help creators, brands and photographers transform ordinary photos and footage into visually premium content that feels cinematic, modern and commercially powerful.</p>
           </div>
           <div className={styles.secondaryText}>
-            <p>Welcome to AGNO, where creativity meets technology to transform your brand's online presence. We are passionate about delivering innovative solutions tailored to your unique goals.</p>
+            <p>From high-end skin retouching and advanced color grading to YouTube videos, reels, ads and motion graphics — each project is edited with precision, emotion and storytelling in mind.</p>
             <a href="#discover" className={`hover-target ${styles.link}`}>Discover more ↗</a>
           </div>
         </div>

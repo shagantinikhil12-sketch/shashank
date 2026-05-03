@@ -29,6 +29,21 @@
   font-size: 56px;
   font-weight: 300;
   margin: 0;
+  transition: transform 0.5s ease;
+}
+
+.row:hover .title {
+  transform: translateX(10px);
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  transition: opacity 0.3s ease;
+}
+
+.list:hover .row:not(:hover) {
+  opacity: 0.4;
 }
 
 .description {

@@ -3,24 +3,24 @@ import styles from './Services.module.css';
 
 const servicesList = [
   {
-    title: 'Photo Editing',
-    description: 'Professional retouching, skin correction, color enhancement'
+    title: 'Photo Retouching',
+    description: 'Professional skin cleanup, object removal, portrait enhancement and commercial polish.'
   },
   {
     title: 'Color Grading',
-    description: 'Cinematic LUT-based grading for photos and video'
+    description: 'Cinematic LUT-based grading for moody, luxury and film-like visual tones.'
   },
   {
     title: 'Video Editing',
-    description: 'Cut, pace, and story-driven editing for all formats'
+    description: 'Clean storytelling edits for YouTube, promo videos, ads and branded content.'
   },
   {
     title: 'Reels & Shorts',
-    description: 'Fast-paced social content optimized for engagement'
+    description: 'Fast-paced vertical edits optimized for engagement and retention.'
   },
   {
     title: 'Motion Graphics',
-    description: 'Titles, transitions, animated overlays, and lower thirds'
+    description: 'Titles, captions, transitions, logo animation and animated overlays.'
   }
 ];
 
