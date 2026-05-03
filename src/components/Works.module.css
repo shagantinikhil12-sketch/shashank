@@ -1,0 +1,93 @@
+.works {
+  background-color: var(--bg-dark);
+  position: relative;
+  padding-bottom: var(--space-xl);
+  overflow: hidden;
+}
+
+.marqueeContainer {
+  position: absolute;
+  top: 100px; /* Adjust based on where it should appear */
+  left: 0;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.marqueeText {
+  display: inline-block;
+  animation: marquee 30s linear infinite;
+  font-family: var(--font-display);
+  font-size: 8vw;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.04);
+}
+
+.marqueeText span {
+  padding-right: 50px;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  margin-top: 150px; /* Leave space for marquee to show */
+}
+
+.grid {
+  display: flex;
+  gap: 12px;
+}
+
+.col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.imageWrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), filter 0.6s ease;
+  filter: brightness(0.9);
+}
+
+.imageWrapper:hover img {
+  transform: scale(1.03);
+  filter: brightness(1.1);
+}
+
+/* Aspect ratios */
+.portrait {
+  aspect-ratio: 3 / 4;
+}
+
+.square {
+  aspect-ratio: 1 / 1;
+}
+
+.landscape {
+  aspect-ratio: 4 / 3;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    flex-direction: column;
+  }
+  .marqueeContainer {
+    display: none; /* Hide marquee on mobile as per spec */
+  }
+  .container {
+    margin-top: var(--space-lg);
+  }
+}
