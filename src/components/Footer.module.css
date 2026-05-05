@@ -85,17 +85,23 @@
   .footer {
     padding: 80px 0 40px 0;
   }
+  .marqueeText {
+    font-size: 25vw;
+    color: rgba(255, 255, 255, 0.02);
+  }
   .grid {
     flex-direction: column;
-    gap: 40px;
+    gap: 32px;
     margin-bottom: 60px;
+    align-items: center;
+    text-align: center;
   }
-  .marqueeText {
-    font-size: 20vw;
+  .col {
+    gap: 8px;
   }
   .bottomBar {
     flex-direction: column;
-    gap: 20px;
+    gap: 16px;
     align-items: center;
     text-align: center;
   }

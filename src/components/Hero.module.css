@@ -193,43 +193,60 @@
 }
 
 @media (max-width: 768px) {
+  .content {
+    justify-content: flex-end;
+    padding-bottom: 12vh;
+  }
+
   .titleInner {
-    font-size: 16vw;
+    font-size: 13vw;
     width: 100%;
     transform: translateX(0);
   }
 
   .subtitle {
-    font-size: 12px;
-    margin-top: 20px;
+    font-size: 13px;
+    margin-top: 16px;
   }
 
   .tagline {
-    bottom: 120px;
+    position: relative;
+    bottom: auto;
+    margin-top: 40px;
+    padding: 0;
   }
 
   .premiumText {
-    font-size: 14px;
-    padding: 0 10px;
+    font-size: 15px;
+    padding: 0;
+    max-width: 85%;
   }
 
   .ctaGroup {
     flex-direction: column;
-    gap: var(--space-md);
+    gap: 16px;
     width: 100%;
     align-items: center;
   }
 
   .button {
-    width: 250px;
+    width: 80%;
+    padding: 14px 0;
   }
 
   .trustStrip {
-    flex-wrap: wrap;
-    padding: 0 20px;
-    bottom: 20px;
-    font-size: 9px;
-    gap: 8px;
-    justify-content: center;
+    position: relative;
+    bottom: auto;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    text-align: center;
+    font-size: 10px;
+    width: 100%;
+  }
+
+  .trustStrip .dot {
+    display: none;
   }
 }

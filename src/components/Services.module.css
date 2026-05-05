@@ -94,18 +94,27 @@
   .rowContent {
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
-    padding: 40px 0;
+    gap: 12px;
+    padding: 32px 0;
   }
   .titleWrapper {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    gap: 12px;
   }
   .title {
-    font-size: 32px;
+    font-size: 28px;
   }
   .description {
     width: 100%;
-    font-size: 15px;
+    font-size: 14px;
+    padding-left: 0;
+    color: #000000;
+  }
+  .row:hover .title {
+    transform: none;
+  }
+  .list:hover .row:not(:hover) {
+    opacity: 1;
   }
 }

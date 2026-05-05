@@ -45,7 +45,7 @@ const Contact = () => {
           <span className={styles.label}>AVAILABLE FOR WORK</span>
         </div>
 
-        <h2 className={styles.heading}>let's create something cinematic</h2>
+        <h2 className={styles.heading}>let's create<br className={styles.mobileBreak} /> something cinematic</h2>
         <p className={styles.subtitle}>Tell me about your project and get a response within 12 hours.</p>
 
         <div className={styles.formContainer}>
