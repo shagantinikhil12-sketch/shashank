@@ -44,7 +44,7 @@ const Contact = () => {
           <span className={styles.dot}></span>
           <span className={styles.label}>AVAILABLE FOR WORK</span>
         </div>
-        
+
         <h2 className={styles.heading}>let's create something cinematic</h2>
         <p className={styles.subtitle}>Tell me about your project and get a response within 12 hours.</p>
 
@@ -66,13 +66,13 @@ const Contact = () => {
             {submitStatus === 'error' && <p className={styles.errorMessage}>Failed to send message. Please try again later.</p>}
           </form>
         </div>
-        
+
         <div className={styles.socialLinks}>
-          <a href="#" className="hover-target">Instagram</a>
+          <a href="https://www.instagram.com/shashii_0/" className="hover-target">Instagram</a>
           <span className={styles.separator}>/</span>
-          <a href="#" className="hover-target">WhatsApp</a>
+          <a href="https://wa.me/7981520858" className="hover-target">WhatsApp</a>
           <span className={styles.separator}>/</span>
-          <a href="mailto:hello@example.com" className="hover-target">Email</a>
+          <a href="mailto:shashankh099@gmail.com" className="hover-target">Email</a>
         </div>
       </div>
     </section>

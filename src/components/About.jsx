@@ -14,7 +14,7 @@ const About = () => {
           </div>
           <div className={styles.secondaryText}>
             <p>From high-end skin retouching and advanced color grading to YouTube videos, reels, ads and motion graphics — each project is edited with precision, emotion and storytelling in mind.</p>
-            <a href="#discover" className={`hover-target ${styles.link}`}>Discover more ↗</a>
+            <a href="#works" className={`hover-target ${styles.link}`}>Discover more ↗</a>
           </div>
         </div>
       </div>

@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import Lenis from 'lenis';
-import CustomCursor from './components/CustomCursor';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Showreel from './components/Showreel';
@@ -40,7 +39,6 @@ function App() {
 
   return (
     <>
-      <CustomCursor />
       <Navbar />
       <main>
         <Hero />

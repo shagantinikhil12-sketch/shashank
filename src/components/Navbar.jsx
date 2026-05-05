@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
       <div className={styles.logo}>
-        <a href="#home"><img src="/public/navigation.png" alt="shashank" style={{ height: 75, width: 100 }} /></a>
+        <a href="#home"><img src="/public/navigation.jpeg" alt="logo" style={{ height: 75, width: 100 }} /></a>
       </div>
       <div className={styles.links}>
         <a href="#home">Home</a>

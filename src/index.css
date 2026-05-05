@@ -37,14 +37,12 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  cursor: none; /* Hide default cursor to use custom one */
 }
 
 /* Links */
 a {
   color: inherit;
   text-decoration: none;
-  cursor: none;
 }
 
 /* Typography Utility */
@@ -53,31 +51,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
-/* Custom Cursor */
-.custom-cursor {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 8px;
-  height: 8px;
-  background-color: white;
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9999;
-  mix-blend-mode: difference;
-  transform: translate(-50%, -50%);
-  transition: transform 0.15s ease-out, width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-}
-
-.custom-cursor.hovering {
-  width: 50px;
-  height: 50px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(2px);
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-}
 
 /* Animations */
 @keyframes fadeInUp {
@@ -140,10 +113,5 @@ h1, h2, h3, h4, h5, h6 {
   .container {
     padding: 0 var(--space-sm);
   }
-  body, a {
-    cursor: auto;
-  }
-  .custom-cursor {
-    display: none;
-  }
+
 }
